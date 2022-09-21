@@ -103,52 +103,71 @@ li {
   width: 100%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
 
+.mobile {
+  padding: 40px 0 49px 0;
+  background: rgb(184,138,203);
+}
 
+.mobile .wrapper{
+  width: 25%;
+  border: 3px solid rgb(238,238,238);
+  border-radius: 15px;
+  overflow: hidden;
+}
 
+.image-list { display: none; }
 
+.active-list { display: block; }
 
+.image img { 
+  object-fit: cover;
+  transition: opacity 0.5s ease; 
+}
 
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(255,255,255);
+}
 
+.nav-link {
+  padding: 15px 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(119,119,119);
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.nav-list-active .nav-link { color: rgb(142,68,173); }
+
+.nav-link:hover { color: rgb(142,68,173); }
+
+.nav-link::before {
+  margin-bottom: 7px;
+  font-family: "FontAwesome";
+  font-size: 17px;
+}
+
+.home-icon::before {
+  content: "\e3af";
+}
+.work-icon::before {
+  content: "\f466";
+}
+.blog-icon::before {
+  content: "\f518";
+}
+.about-icon::before {
+  content: "\f0c0";
+}
 
 /*=================================
   main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
 =================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
