@@ -124,9 +124,20 @@ li {
 
 .active-list { display: block; }
 
+.active-list .image { animation: fade 0.7s; }
+
+@keyframes fade {
+  0%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .image img { 
+  height: 75.6vh;
   object-fit: cover;
-  transition: opacity 0.5s ease; 
 }
 
 .nav-items {
